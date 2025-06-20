@@ -1,4 +1,4 @@
-@import '../../app/vars.scss';
+@use '../../app/vars.scss' as *;
 .container {
    min-width: 360px;
    padding: 0px 10px;
