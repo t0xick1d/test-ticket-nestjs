@@ -6,13 +6,12 @@ import Link from '@mui/material/Link';
 
 const Navigation = () => {
    const params = usePathname();
-
    const checkActivePath = (path: string) => {
       return params === path ? style.active : '';
    };
    return (
       <nav className={style.linkContainer}>
-         <Link className={checkActivePath('/home')} href="/home">
+         <Link className={checkActivePath('/')} href="/">
             Home
          </Link>
          <Link className={checkActivePath('/search')} href="/search">

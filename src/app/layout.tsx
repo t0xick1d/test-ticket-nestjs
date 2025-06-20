@@ -7,7 +7,6 @@ import { Navigation } from '../components';
 import Image from 'next/image';
 import logo from './logoPlane.svg';
 import style from './layout.module.scss';
-import './globals.css';
 
 export const metadata: Metadata = {
    title: 'Test Tickets',
