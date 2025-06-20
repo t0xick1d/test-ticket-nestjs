@@ -2,7 +2,8 @@ import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter';
 import { Roboto_Mono } from 'next/font/google';
 import { Providers } from './providers';
 import type { Metadata } from 'next';
-import Link from '@mui/material/Link';
+import { Navigation } from '../components';
+
 import Image from 'next/image';
 import logo from './logoPlane.svg';
 import style from './layout.module.scss';
@@ -27,11 +28,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
             </div>
             <AppRouterCacheProvider options={{ key: 'scss', enableCssLayer: true }}>
                <Providers>
-                  <nav className={style.linkContainer}>
-                     <Link href="/home">Home</Link>
-                     <Link href="/search">Search</Link>
-                     <Link href="/chart">Chart</Link>
-                  </nav>
+                  <Navigation />
                   <main>{children}</main>
                </Providers>
             </AppRouterCacheProvider>
